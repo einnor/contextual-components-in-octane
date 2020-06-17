@@ -1,8 +1,8 @@
 <div class="w-screen h-screen pt-12 bg-gray-100 flex justify-center">
-  <Dropdown>
-    <Dropdown::Button @onClick={{this.toggleIsOpen}} />
+  <Dropdown as |d|>
+    <d.Button @onClick={{this.toggleIsOpen}} />
     {{#if this.isOpen}}
-      <Dropdown::Menu />
+      <d.Menu />
     {{/if}}
   </Dropdown>
 </div>

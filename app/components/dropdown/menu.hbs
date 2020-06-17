@@ -1,7 +1,9 @@
 {{#if @isOpen}}
   <div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg">
     <div class="rounded-md bg-white shadow-xs" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-      {{yield}}
+      {{yield (hash
+        Header=(component 'dropdown/menu/header')
+      )}}
     </div>
   </div>
 {{/if}}

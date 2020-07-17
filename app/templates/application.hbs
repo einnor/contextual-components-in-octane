@@ -17,7 +17,9 @@
         <m.Divider />
 
         <m.Button @onClick={{this.archive}}>Archive</m.Button>
-        <m.Button @onClick={{this.toggleIsShowingMore}}>More</m.Button>
+        <m.Button @onClick={{this.toggleIsShowingMore}}>
+          {{if this.isShowingMore 'Less' 'More'}}
+        </m.Button>
 
         <m.Divider />
 

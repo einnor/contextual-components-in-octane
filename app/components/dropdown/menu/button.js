@@ -5,6 +5,8 @@ export default class DropdownMenuButtonComponent extends Component {
     @action
     handleClick () {
         this.args.onClick();
-        this.args.closeMenu();
+        if (this.args.shouldCloseMenu !== false) {
+            this.args.closeMenu();
+        }
     }
 }

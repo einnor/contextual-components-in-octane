@@ -9,4 +9,9 @@ export default class ApplicationController extends Controller {
   toggleIsOpen () {
     this.isOpen = !this.isOpen;
   }
+
+  @action
+  archive () {
+    console.log('archiving...')
+  }
 }
